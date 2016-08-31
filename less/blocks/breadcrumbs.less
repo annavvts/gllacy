@@ -1,0 +1,39 @@
+.breadcrumbs {
+	margin-top: -20px;
+
+	li {
+		display: inline-block;
+		color: white;
+		position: relative;
+		padding-right: 20px;
+
+		&:not(:last-child) {
+
+			&:after {
+				content: "»";
+				position: absolute;
+				color: white;
+				left: 61px;
+			}
+		}
+	}
+
+	a {
+		color: white;
+		font-size: 14px;
+		line-height: 16px;
+		border-bottom: 1px solid #b0c0b7;
+
+		&:hover {
+			color: #ffbc9e;
+		}
+
+		&:active {
+			color: #ffbc9e;
+		}
+	}
+
+	.active {
+		border: none;
+	}
+}

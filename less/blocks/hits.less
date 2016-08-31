@@ -1,0 +1,83 @@
+.hits {
+	display: flex;
+	justify-content: space-around;
+
+	.btn {
+		.btn();
+			padding: 10px 25px;
+			display: none;
+			width: 195px;
+			align-self: center;
+			margin-top: 22px;
+			margin-bottom: 20px;
+	}
+
+	.hit {
+		position: relative;
+		display: inline-flex;
+		width: 24%;
+		min-height: 360px;
+		color: white;
+		margin-top: 40px;
+		flex-direction: column;
+	    margin-bottom: 40px;
+	    border-radius: 10px;
+		background-repeat: no-repeat;
+		background-size: 267px 267px;
+		background-position: top center;
+		margin-bottom: 64px;
+		
+		&:hover {
+			background-color: #9db1a5;
+			margin-bottom: 0;
+		}
+
+		&:hover>.btn {
+			display: block;
+		}
+		
+		.price {
+			text-align: left;
+			margin-top: 220px;
+			color: white;
+			font-weight: 700;
+			font-size: 45px;
+		}
+		.ice-title {
+			text-align: center;
+			// border-bottom: 1px solid #9db1a5;
+			text-decoration: underline;
+			min-height: 50px;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url("../img/sprite.png");
+			background-repeat: no-repeat;
+			width: 61px;
+    		height: 61px;
+    		background-position: -130px -68px;
+		}
+	}
+	
+	.citrus {
+		.citrus();
+	}
+
+	.coffee {
+		.coffee();
+	}
+
+	.strawberry {
+		.strawberry();
+	}
+
+	.creme {
+		.creme();
+	}
+
+
+}

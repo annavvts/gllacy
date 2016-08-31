@@ -1,0 +1,289 @@
+.ice-properties {
+	color: white;
+	display: flex;
+  width: 853px;
+  flex-wrap: wrap;
+  align-items: center;
+	
+	h2 {
+		font-size: 35px;
+		line-height: 41px;
+		font-weight: 700;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 15px;
+	}
+
+	span {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    display: block;
+	}
+
+	ul {
+		background-color: @faded-bg;
+		border-radius: 20px;
+    padding: 10px 0;
+    padding-right: 10px;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+  .sort-by {
+    width: 22%;
+    flex-wrap: wrap;
+    margin-right: 12px;
+
+    select {
+      border-radius: 20px;
+      padding: 5px;
+      background-color: @faded-bg;
+      color: white;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      &:focus {
+        outline: none;
+      }
+  }
+
+  }
+
+  .prices {
+    width: 25%;
+    margin-right: 12px;
+
+    span {
+      margin-bottom: 10px;
+    }
+
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 188px;
+        background: @faded-bg;
+        padding: 15px;
+        border-radius: 20px;
+  }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+    }
+
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: @faded-bg;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #f8f7f4;
+      cursor: pointer;
+      margin-top: -7px;
+    }
+    input[type=range]:focus::-webkit-slider-thumb {
+      height: 22px;
+      width: 22px;
+    }
+
+    input[type=range]::-moz-range-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #f8f7f4;
+      cursor: pointer;
+    }
+    input[type=range]:focus::-moz-range-thumb {
+      height: 22px;
+      width: 22px;
+    }
+
+    input[type=range]::-ms-thumb {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #f8f7f4;
+      cursor: pointer;
+    }
+    input[type=range]:focus::-ms-thumb {
+      height: 22px;
+      width: 22px;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 188px;
+      height: 4px;
+      cursor: pointer;
+      background: #d1dad3;
+    }
+
+
+    input[type=range]::-moz-range-track {
+      width: 188px;
+      height: 4px;
+      cursor: pointer;
+      background: #d1dad3;
+    }
+
+    input[type=range]::-ms-track {
+      width: 188px;
+      height: 4px;
+      cursor: pointer;
+      background: #d1dad3;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+      background: #d1dad3;
+    }
+    input[type=range]::-ms-fill-upper {
+      background: #d1dad3;
+    }
+  }
+
+  .fatness {
+    display: inline-flex;
+    width: 50%;
+    flex-wrap: wrap;
+
+    input[type=radio] {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      padding-left: 50px;
+
+      &:hover:before {
+          border: 2px solid white;
+        }
+
+      &:disabled:before {
+          border: 1px solid #b5c4bc;
+        }
+
+      &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border: 1px solid white;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 17px;
+        }
+    }
+
+    input:checked + label:after {
+        content: "";
+        position: absolute;
+        left: 23px;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    input:checked + label:hover:after {
+      left: 24px;
+      top: 7px;
+    }
+  }
+
+  .fillers {
+    display: inline-flex;
+    width: 80%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 12px;
+
+    input[type=checkbox] {
+      display: none;
+    }
+  
+    ul {
+      display: flex;
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      padding-left: 50px;
+
+      &:hover:before {
+          border: 2px solid white;
+        }
+
+      &:disabled:before {
+          border: 1px solid #b5c4bc;
+        }
+
+      &:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border: 1px solid white;
+          border-radius: 5px;
+          position: absolute;
+          top: 0;
+          left: 17px;
+        }
+    }
+
+    input:checked + label:after {
+        content: "";
+        position: absolute;
+        left: 21px;
+        top: 6px;
+        width: 12px;
+        height: 5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: rotate(-45deg);
+    }
+}
+
+	.submit {
+    margin-top: 40px;
+		font-size: 16px;
+		line-height: 18px;
+		color: white;
+		font-weight: 500;
+		font-family: inherit;
+		background-color: #a6b7ae;
+		border: 2px solid white;
+		border-radius: 20px;
+    padding: 8px 25px;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
+
+
+
+

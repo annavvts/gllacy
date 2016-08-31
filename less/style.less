@@ -1,0 +1,95 @@
+@import "variables.less";
+@import "mixins.less";
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.catalog-body {
+  background-color: #849d8f;
+}
+
+body > input[type="radio"] {
+  display: none;
+}
+
+ul {
+   padding-left: 0;
+   margin: 0;
+   list-style: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  background-color: #a9bbb1;
+  height: 1px;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1, #btn-2:checked ~ .site-wrapper #slide2, #btn-3:checked ~ .site-wrapper #slide3 {
+      display: block;
+    }
+
+    #btn-1:checked ~ .site-wrapper label[for="btn-1"], #btn-2:checked ~ .site-wrapper label[for="btn-2"], #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+      background-color: #ffffff;
+  }
+
+  #btn-1:checked ~ .site-wrapper {
+    background-color: #849d8f;
+    background-image: url("../img/slider-1.png");
+  }
+
+  #btn-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+    background-image: url("../img/slider-2.png");
+  }
+
+  #btn-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("../img/slider-3.png");
+  }
+
+  #btn-1:checked ~ .site-wrapper label[for="btn-1"],
+  #btn-2:checked ~ .site-wrapper label[for="btn-2"],
+  #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+    background-color: #ffffff;
+  }
+
+@import "blocks/site-wrapper.less";
+@import "blocks/content-wrapper.less";
+@import "blocks/slider.less";
+@import "blocks/header.less";
+@import "blocks/special.less";
+@import "blocks/hits.less";
+@import "blocks/description.less";
+@import "blocks/blog-preview.less";
+@import "blocks/newsletter.less";
+@import "blocks/map.less";
+@import "blocks/footer.less";
+@import "blocks/breadcrumbs.less";
+@import "blocks/ice-properties.less";
+@import "blocks/catalog.less";
+@import "blocks/pagination.less";
